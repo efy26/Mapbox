@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-body {
+.body_accueil {
     background-color: rgb(15, 15, 15);
     color: white;
 
@@ -27,6 +27,13 @@ body {
 .mapbox_logo {
     color: white;
 }
+.container_header_options {
+    display: flex;
+    align-items: center;
+}
+.container_header_options p{
+    font-weight: 500;
+}
 .container_header_options a{
     color: white;
     font-size: 14px;
@@ -35,9 +42,14 @@ body {
     margin: 17px;
     text-decoration: none;
 }
-.Produits, .Solutions, .Développeurs, .Entreprise {
-    pointer-events: none;
+.Solutions, .Produits, .Développeurs, .Entreprise {
+    cursor:default;
     
+}
+.Produits i, .Entreprise i{
+    margin-left: 3px;
+    font-size: 12px;
+    transition: 1s all;
 }
 
 .container_header_options_deux a{
@@ -1034,3 +1046,193 @@ main {
 
 }
 /* FIN footer deux  */
+
+/* DEBUT MOUSEOVER */
+/* mouseover produit */
+.mouseover_menu_all_block {
+    display: none;
+    padding-left: 8.8%;
+}
+.mouseover_menu {
+    display: flex;
+    justify-content: center;
+    width: 73%;
+    height: 450px;
+    position: fixed;
+    z-index: 5;
+    background-color: #181b1f;
+    border-radius: 5px 5px 20px 20px;
+    margin-top: 3.9%;
+    padding: 20px;
+}
+.mouseover_menu_all {
+    padding: 15px;
+    margin-bottom: 25px;
+}
+.premie_titre_h5, .LOGISTIQUE {
+    color: #A0AABA;
+    font-weight: 100;
+}
+.LOGISTIQUE{
+    margin-top: 30px;
+}
+.Données_relatives {
+    text-wrap: wrap;
+}
+.navigation_option a{
+    text-decoration: none;
+}
+.a:hover{
+    color: rgba(64, 140, 254, 0.859);
+
+}
+.navigation_option p{
+    color: #A0AABA;
+    font-size: 13px;
+    margin-top: 2%;
+}
+.liens_over {
+    display: flex;
+    padding-top: 15px;
+}
+.as {
+    background-color: red;
+}
+.liens_over svg {
+    color: #343a42;
+}
+.liens_over h5, .liens_over div{
+    padding-left: 7px;
+    color: #ffffff;
+}
+.mouseover_menu_all_dernier_block {
+    margin-top: -15px;
+    width: 89%;
+    margin-left: 6%;
+}
+.dernier_block {
+    padding: 0;
+    margin: 0;
+}
+.PLATEFORME {
+    color: #A0AABA;
+    font-size: 13px;
+
+    padding-top: 25px;
+}
+/* mouseover solution */
+.solution_mouseover {
+    display: none;
+    z-index: 5;
+    margin-top: 4%;
+    position: fixed;
+    padding: 30px 25px;
+    width: 40%;
+    background-color: #181b1f;
+    margin-left: 27%;
+    border-radius: 10px 10px 20px 20px;
+}
+.solution_mouseover_premier_div {
+    display: flex;
+    align-items: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #343a42;
+    color: #A0AABA;
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: .14em;
+    font-weight: 400;
+    font-family: Cera pro,Trebuchet MS,sans-serif;
+}
+.solution_mouseover_premier_div svg {
+    margin-right: 10px;
+    color: #343a42;
+}
+.solution_mouseover_deuxieme_div {
+    display: flex;
+    
+}
+.all_description h5{
+    margin-top: 8%;
+    font-family: Cera pro,Trebuchet MS,sans-serif;
+    
+}
+.all_description p{
+    width: 80%;
+    color: #A0AABA;
+    font-size: 13px;
+    margin-top: 2%;
+    font-family: Cera pro,Trebuchet MS,sans-serif;
+}
+.solution_mouseover_deuxieme_div_block_deux div{
+    cursor: pointer;
+}
+/* mouseover developpement */
+.mouseover_developpement_all {
+    padding-left: 34%;
+    display: none;
+}
+.mouseover_developpement {
+    position: fixed;
+    z-index: 5;
+    margin-top: 4%;
+    padding: 50px 35px;
+    width: 17%;
+    border-radius: 10px 10px 20px 20px;
+    background-color: #181b1f;
+}
+.mouseover_developpement_block_un {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #343a42;
+    padding-bottom: 15px;
+}
+.mouseover_developpement_block_un svg {
+    margin-right: 10px;
+    color: #343a42;
+}
+.mouseover_developpement_block_un h5 {
+    font-family: Cera pro,Trebuchet MS,sans-serif;
+    color: #A0AABA;
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: .14em;
+    font-weight: 400;
+}
+.mouseover_developpement_block_deux h5{
+    color: #ffffff;
+    font-size: 14px;
+    margin-top: 14%;
+    text-wrap: wrap;
+    font-family: Cera pro,Trebuchet MS,sans-serif;
+}
+.mouseover_developpement_block_deux p{
+    color: #A0AABA;
+    font-size: 12px;
+    margin-top: 10px;
+    text-wrap: wrap;
+    font-family: Cera pro,Trebuchet MS,sans-serif;
+}
+/* mouseover entreprise */
+.mouseover_entreprise_all {
+    display: none;
+    margin-left: 43%;
+}
+.mouseover_entreprise {
+    position: fixed;
+    z-index: 5;
+    margin-top: 4%;
+    padding: 0px 35px 35px 35px;
+    border-radius: 10px 10px 20px 20px;
+    background-color: #181b1f;
+}
+.mouseover_entreprise_block h5{
+    color: #ffffff;
+    font-size: 14px;
+    margin-top: 14%;
+    text-wrap: wrap;
+    font-family: Cera pro,Trebuchet MS,sans-serif;
+}
+.mouseover_entreprise_block {
+    margin-top: 35px;
+}

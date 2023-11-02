@@ -4,6 +4,8 @@ const btn_droite = document.querySelector("#Droite")
 const section_deux = document.querySelector(".section_deux")
 let video_carousel = document.querySelector(".video_carousel")
 const image_carousel_svg = document.querySelector(".bi-play")
+let produits = document.querySelector(".Produits")
+let produits_i = document.querySelector(".Produits i")
 let indice_element_active = 1
 
 
@@ -13,8 +15,6 @@ window.onload = () => {
     augmenter(image_carousel[indice_element_active])
     
     video_carousel.style = "border-radius: 20px;"
-    
-
     bouton_gauche.addEventListener("click", slideGauche)
     btn_droite.addEventListener("click", slideDroite)
 

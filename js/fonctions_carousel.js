@@ -104,6 +104,45 @@ function playRemoveEffet(variable) {
         document.querySelector(".PERANT_LA_VOIE_2").style ="color: black"
     })
 
+    produits.addEventListener("mouseover", () => {
+        document.querySelector(".mouseover_menu_all_block").style ="display: flex;"
+        produits_i.setAttribute("class", "bi bi-chevron-up")
+    })
+    
+    produits.addEventListener("mouseout", () => {
+        document.querySelector(".mouseover_menu_all_block").style ="display: none;"
+        produits_i.setAttribute("class", "bi bi-chevron-down")
+    })
+
+    document.querySelector(".Solutions").addEventListener("mouseover", () => {
+        document.querySelector(".solution_mouseover").style ="display: flex;"
+        // produits_i.setAttribute("class", "bi bi-chevron-up")
+    })
+    
+    document.querySelector(".Solutions").addEventListener("mouseout", () => {
+        document.querySelector(".solution_mouseover").style ="display: none;"
+        // produits_i.setAttribute("class", "bi bi-chevron-down")
+    })
+
+    document.querySelector(".Développeurs").addEventListener("mouseover", () => {
+        document.querySelector(".mouseover_developpement_all").style ="display: flex;"
+        // produits_i.setAttribute("class", "bi bi-chevron-up")
+    })
+    
+    document.querySelector(".Développeurs").addEventListener("mouseout", () => {
+        document.querySelector(".mouseover_developpement_all").style ="display: none;"
+        // produits_i.setAttribute("class", "bi bi-chevron-down")
+    })
+
+    document.querySelector(".Entreprise").addEventListener("mouseover", () => {
+        document.querySelector(".mouseover_entreprise_all").style ="display: flex;"
+        document.querySelector(".Entreprise i").setAttribute("class", "bi bi-chevron-up")
+    })
+    
+    document.querySelector(".Entreprise").addEventListener("mouseout", () => {
+        document.querySelector(".mouseover_entreprise_all").style ="display: none;"
+        document.querySelector(".Entreprise i").setAttribute("class", "bi bi-chevron-down")
+    })
 
 
 // function clickSurImage() {
