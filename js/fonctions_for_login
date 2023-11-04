@@ -1,0 +1,13 @@
+document.querySelector(".main_block_cinq input").addEventListener("mouseup", (event) => {
+
+    if (event.target.checked) {
+        
+
+        document.getElementById("change").style = "background-color: #97979746; color: rgba(0, 0, 0, 0.361);"
+    }else {
+        document.getElementById("change").style = "background-color: rgba(0, 0, 255, 0.735); color: white;"
+    }
+
+    // console.log(event.target.checked);
+})
+

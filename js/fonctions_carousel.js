@@ -144,6 +144,8 @@ function playRemoveEffet(variable) {
         document.querySelector(".Entreprise i").setAttribute("class", "bi bi-chevron-down")
     })
 
+    
+
 
 // function clickSurImage() {
 
