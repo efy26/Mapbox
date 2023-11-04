@@ -1236,3 +1236,33 @@
 .mouseover_entreprise_block {
     margin-top: 35px;
 }
+html{
+    --scroll-behavior: smooth;
+    scroll-behavior: smooth;
+}
+.div_footer_deux_block_liens {
+    margin-top: 25px;
+    margin-right: 100px;
+    /* background-color: #343a42; */
+    /* border-radius: 10px; */
+
+}
+.div_footer_deux_block_liens a{
+    display: flex;
+    align-items: center;
+    background-color: #343a42;
+    color: white;
+    padding: 7px 10px; 
+    border-radius: 5px;
+
+    /* border: 1px solid white; */
+}
+.div_footer_deux_block_liens a:hover{
+    background-color: rgba(0, 102, 255, 0.25);
+    color: rgba(255, 255, 255, 0.402);;
+}
+.div_footer_deux_block_liens a i{
+    font-size: 25px;
+    line-height: 2m;
+    font-weight: bold;
+}
