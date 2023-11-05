@@ -1,7 +1,19 @@
 function slideDroite() {
+    
     diminuer(image_carousel[indice_element_active])
 
     section_deux.scrollBy(520 ,0)
+    let screenWidth = screen.width;
+
+        
+        // screenWidth++
+
+    if(screenWidth <= 900){
+        console.log(3);
+        section_deux.scrollBy(60 ,0);
+    }
+        
+
     augmenter(image_carousel[indice_element_active+1])
     
     indice_element_active = indice_element_active+1
